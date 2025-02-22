@@ -1,2 +1,14 @@
+# Build files
 /build/
-/ vendor /
+
+# Dependencies
+/node_modules/
+/vendor/
+
+# Styles
+*.css
+*.scss
+
+# Test files
+*.test.js
+*.spec.js
