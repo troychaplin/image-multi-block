@@ -9,14 +9,20 @@
 	"phpCodeSniffer.exec.osx": "vendor/bin/phpcs",
 	"phpCodeSniffer.exec.linux": "vendor/bin/phpcs",
 
-	"eslint.enable": true,
-	"eslint.options": {
-		"configFile": "${workspaceFolder}/.eslintrc.json"
+	"editor.formatOnSave": true,
+	"[javascript]": {
+		"editor.formatOnSave": true,
+		"editor.codeActionsOnSave": {
+			"source.fixAll.eslint": "explicit"
+		}
 	},
-	"eslint.validate": [
-		"javascript",
-		"javascriptreact",
-		"typescript",
-		"typescriptreact"
-	]
+	"[javascriptreact]": {
+		"editor.formatOnSave": true,
+		"editor.codeActionsOnSave": {
+			"source.fixAll.eslint": "explicit"
+		}
+	},
+
+	"eslint.enable": true,
+	"eslint.validate": [ "javascript", "javascriptreact" ]
 }
